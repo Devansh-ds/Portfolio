@@ -1,7 +1,6 @@
-```md
-# 💼 Portfolio Website
+# Portfolio Website
 
-This is my personal portfolio website built using **React**. It showcases my projects, skills, education, and experience — all in a clean, responsive, and fast-loading interface.
+This is my personal portfolio website built using **React** and **Vite**. It showcases my projects, skills, education, and experience — all in a clean, responsive, and fast-loading interface.
 
 Live Site: [https://devansh-ds.github.io/Portfolio/](https://devansh-ds.github.io/Portfolio/)
 
@@ -19,21 +18,20 @@ Live Site: [https://devansh-ds.github.io/Portfolio/](https://devansh-ds.github.i
 ## 📂 Project Structure
 
 ```
-
 Portfolio/
 ├── public/
 │   └── ... (static assets)
 ├── src/
 │   ├── assets/         # Images and media
-│   ├── components/     # Reusable React components and sections
+│   ├── components/     # Reusable React components
+│   ├── pages/          # Main sections like About, Projects, Contact
 │   ├── App.jsx
 │   └── main.jsx
 ├── dist/               # Production build (auto-generated)
 ├── vite.config.js
 ├── package.json
 └── README.md
-
-````
+```
 
 ---
 
@@ -54,7 +52,7 @@ Portfolio/
    ```bash
    git clone https://github.com/Devansh-ds/Portfolio.git
    cd Portfolio
-````
+   ```
 
 2. **Install dependencies:**
 
@@ -90,13 +88,12 @@ Portfolio/
 
 ---
 
-## 📬 Contact
+## 🙌 Acknowledgements
 
-Feel free to connect with me on:
-
-* [LinkedIn](https://www.linkedin.com/in/devansh-singla-a3358427a/)
-* [GitHub](https://github.com/Devansh-ds)
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ---
 
-```
