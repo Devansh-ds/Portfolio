@@ -12,7 +12,7 @@ import twelth from "./assets/education/unnamed.jpg";
 // tech_logo
 import css from "./assets/tech_logo/css.png";
 import docker from "./assets/tech_logo/docker.png";
-import eclipse from "./assets/tech_logo/eclipse.webp";
+import eclipse from "./assets/tech_logo/eclipse.png";
 import git from "./assets/tech_logo/git.png";
 import github from "./assets/tech_logo/github.png";
 import html from "./assets/tech_logo/html.png";
@@ -25,17 +25,27 @@ import mysql from "./assets/tech_logo/mysql.png";
 import netlify from "./assets/tech_logo/netlify.png";
 import postman from "./assets/tech_logo/postman.png";
 import reactjs from "./assets/tech_logo/reactjs.png";
-import redis from "./assets/tech_logo/Redis-Logo.wine.svg";
 import redis2 from "./assets/tech_logo/redis.png";
 import redux from "./assets/tech_logo/redux.png";
-import routerdark from "./assets/tech_logo/rr_lockup_dark.png";
-import routerlight from "./assets/tech_logo/rr_lockup_light.png";
+import routerdark from "./assets/tech_logo/rr_logo_dark.png";
 import springboot from "./assets/tech_logo/springboot.png";
 import tailwindcss from "./assets/tech_logo/tailwindcss.png";
-import vistaeclipse from "./assets/tech_logo/Vista-eclipse.png";
 import vscode from "./assets/tech_logo/vscode.png";
 
-export const SkilsInfo = [
+// projects images
+import assembly1 from "./assets/projects/assembly1.png";
+import recipe from "./assets/projects/recipe.png";
+import snake from "./assets/projects/snake.png";
+import tenzies from "./assets/projects/tenzies.png";
+import blog from './assets/projects/blog.avif'
+import chatapp from './assets/projects/chatapp.png'
+import crypto from './assets/projects/crypto.png'
+import ecommerce from './assets/projects/ecommerce.png'
+import food from './assets/projects/food.webp'
+import shoppingcart from './assets/projects/shoppingcart.jpg'
+import sports from './assets/projects/sports.webp'
+
+export const SkillsInfo = [
   {
     title: "Frontend",
     skills: [
@@ -55,7 +65,7 @@ export const SkilsInfo = [
       { name: "Spring boot", logo: springboot },
       { name: "MySQL", logo: mysql },
       { name: "Apache kafka", logo: kafka },
-      { name: "Redis", logo: redis },
+      { name: "Redis", logo: redis2 },
     ],
   },
   {
@@ -68,8 +78,8 @@ export const SkilsInfo = [
   {
     title: "Tools",
     skills: [
-      { name: "Git", skills: git },
-      { name: "GitHub", skills: github },
+      { name: "Git", logo: git },
+      { name: "GitHub", logo: github },
       { name: "Docker", logo: docker },
       { name: "VS Code", logo: vscode },
       { name: "Postman", logo: postman },
@@ -80,7 +90,7 @@ export const SkilsInfo = [
   },
 ];
 
-export const experience = [
+export const experiences = [
   {
     id: 0,
     img: cantilever,
@@ -97,7 +107,7 @@ export const experience = [
     company: "Crypto Trading App",
     date: "April 2025 - June 2025",
     desc: "Developed a full stack app using React.js and Spring boot that interacts with CoinGecko's public API to display live market data, token prices, and charts with filtering and sorting capabilities. Along with that user can trade coins, transfer money and watch coin history.",
-    skills: ["JavaScript", "React JS", "Axios", "CoinGecko API", "Chart.js","Tailwind CSS", "Java", "Spring boot", "MySql", "Spring Security"],
+    skills: ["JavaScript", "React JS", "Axios", "CoinGecko API", "Chart.js", "Tailwind CSS", "Java", "Spring boot", "MySql", "Spring Security"],
   },
   {
     id: 2,
@@ -143,7 +153,7 @@ export const projects = [
     title: "Crypto Trading Platform",
     description:
       "A Full-stack application that provides real-time market data for cryptocurrencies and historical analysis. User can trade coins, check analysis and transfer money. Integrated with Coin-gecko APIs to display live price updates, charts, and asset details. Offers filtering, sorting, and a clean UI for fast analysis.",
-    image: tradinglogo,
+    image: crypto,
     tags: ["React JS", "Java", "Spring boot", "JWT Auth", "JavaScript", "Tailwind CSS", "CoinGecko API", "Axios", "Chart.js"],
     github: "https://github.com/Devansh-ds/RealTimeTrading",
     webapp: "",
@@ -153,7 +163,7 @@ export const projects = [
     title: "TalkSync - Real-Time Chat App",
     description:
       "A full-stack real-time chat application built with Spring Boot and React.js. Supports secure JWT-based authentication, one-on-one and group chats, real-time messaging with WebSocket, delivery/read receipts, message persistence, and presence indicators. Designed to be responsive across devices.",
-    image: "chatAppLogo",
+    image: chatapp,
     tags: ["Java", "Spring Boot", "WebSocket", "React JS", "MySQL", "JWT", "Spring Security", "Tailwind CSS"],
     github: "https://github.com/Devansh-ds/Chat-app",
     webapp: "",
@@ -163,7 +173,7 @@ export const projects = [
     title: "Sportigo - Sports betting backend",
     description:
       "Sportigo is a sports betting platform developed using Java and Spring Boot. It aims to provide users with a seamless experience in placing bets on various sports events. User can bet in various markets. It is a peer-to-peer betting application.",
-    image: "sportigoLogo",
+    image: sports,
     tags: ["Java", "Spring Boot", "WebSocket", "React JS", "MySQL", "JWT", "Spring Security", "Tailwind CSS"],
     github: "https://github.com/Devansh-ds/Sportigo",
     webapp: "",
@@ -173,27 +183,27 @@ export const projects = [
     title: "BiteTrack – Food Delivery Backend",
     description:
       "The Online Food Ordering Backend is a Java Spring-boot based application that enables users to create restaurants, add food items with customizable ingredients, and place orders. The system includes role-based JWT authentication to manage user access securely. Customer can purchase customizable food with restaurant having order tracking",
-    image: "sportigoLogo",
+    image: food,
     tags: ["Java", "Spring Boot", "MySQL", "JWT Auth", "Spring Security"],
     github: "https://github.com/Devansh-ds/FoodOrderOnline",
     webapp: "",
   },
   {
     id: 4,
-    tile: " ShopSwift – E-Commerce Microservice System",
+    title: " ShopSwift – E-Commerce Microservice System",
     description:
       "A distributed e-commerce backend system built with Spring Boot microservices, supporting product listings, orders, payments, and customer notifications. Integrated with Eureka for service discovery, Spring Cloud Gateway as an API gateway, centralized config with Spring Cloud Config, and Apache Kafka for inter-service communication.",
-    image: "e-commerce",
+    image: ecommerce,
     tags: ["Java", "Spring Boot", "Spring Cloud", "Kafka", "MySQL", "Eureka", "API Gateway", "Docker", "Microservices"],
     github: "https://github.com/Devansh-ds/Backend_Projects/tree/main/E-Commerce",
     webapp: "",
   },
   {
     id: 5,
-    tile: "Blog Application",
+    title: "Blog Application",
     description:
       "A blog backend built with Spring Boot featuring JWT-based authentication, image upload with BLOB compression, and AI-powered blog summarization using Hugging Face. Includes full CRUD support, comment system, pagination, and RESTful API endpoints.",
-    image: "e-commerce",
+    image: blog,
     tags: ["Java", "Spring Boot", "Spring Security", "JWT", "MySQL", "WebClient", "REST API", "AI"],
     github: "https://github.com/Devansh-ds/BlogApplication",
     webapp: "",
@@ -203,38 +213,38 @@ export const projects = [
     title: "Shopping Cart – Monolithic Spring Boot Backend",
     description:
       "A backend-driven shopping cart system built with Spring Boot and MySQL. Supports full CRUD for products, categories, users, cart items, and orders. Designed with modularity for easy frontend integration. Includes product image handling and order tracking. Ideal for e-commerce and B2C platforms.",
-    image: "shoppingCartLogo",
+    image: shoppingcart,
     tags: ["Java", "Spring Boot", "Spring Data JPA", "Hibernate", "MySQL", "REST API", "Maven"],
     github: "https://github.com/Devansh-ds/Backend_Projects/tree/main/ShoppingCartProject",
     webapp: "",
   },
   {
     id: 7,
-    tile: "Assembly Endgame",
+    title: "Assembly Endgame",
     description:
       "A React-based interactive word guessing game where users attempt to guess a hidden word letter by letter. The app provides feedback on correct and incorrect letters, and celebrates a win when the full word is correctly guessed. Designed with thematic UI, it offers a simple and engaging game experience for all ages.",
-    image: "assembly",
+    image: assembly1,
     tags: ["HTML", "Tailwind CSS", "React", "Javascript"],
     github: "https://github.com/Devansh-ds/Frontend/tree/main/React/AssemblyEndgame",
     webapp: "https://assembly-endgame-ds.netlify.app",
   },
   {
     id: 8,
-    tile: "Tenzies Game",
+    title: "Tenzies Game",
     description:
       "A simple and addictive dice game built using React.js where the goal is to roll until all dice show the same number. Players can hold dice to keep their values and re-roll the rest. The game features a timer, roll counter, and confetti animation upon winning.",
-    image: "assembly",
+    image: tenzies,
     tags: ["HTML", "Tailwind CSS", "React", "Javascript"],
     github: "https://github.com/Devansh-ds/Frontend/tree/main/React/TenziesGame",
     webapp: "https://tenzies-game-ds.netlify.app",
   },
   {
     id: 9,
-    tile: "Snake Game",
+    title: "Snake Game",
     description:
       "A recreation of the classic snake game, featuring pixel-style design, keyboard controls, and real-time movement. The snake grows as it eats food and the game ends on collision with walls or itself. Clean UI and the smooth gameplay loop.",
 
-    image: "assembly",
+    image: snake,
     tags: ["HTML", "Tailwind CSS", "React", "Javascript"],
     github: "https://github.com/Devansh-ds/Frontend/tree/main/Projects/SnakeGame",
     webapp: "",
