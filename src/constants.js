@@ -102,7 +102,7 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "tradingApp",
+    img: crypto,
     role: "Full Stack Developer (Self-Initiated)",
     company: "Crypto Trading App",
     date: "April 2025 - June 2025",
@@ -111,7 +111,7 @@ export const experiences = [
   },
   {
     id: 2,
-    img: "chatApp",
+    img: chatapp,
     role: "Full Stack Developer (Self-Initiated)",
     company: "Real-Time Chat App",
     date: "January 2025 - March 2025",
